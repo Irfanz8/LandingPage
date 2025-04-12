@@ -1,0 +1,139 @@
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  
+    .about-header {
+      text-align: center;
+      margin-bottom: 4rem;
+  
+      h1 {
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 1rem;
+        animation: fadeInDown 0.8s ease;
+      }
+  
+      .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        animation: fadeInUp 0.8s ease;
+      }
+    }
+  
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+  
+      .feature-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        animation: fadeIn 1s ease;
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        .icon {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+        }
+  
+        h3 {
+          color: #333;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          color: #666;
+          line-height: 1.6;
+        }
+      }
+    }
+  
+    .team-section {
+      text-align: center;
+  
+      h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 3rem;
+      }
+  
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+  
+        .team-member {
+          animation: fadeIn 1s ease;
+  
+          .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+          }
+  
+          .bg-gradient-1 { background: linear-gradient(45deg, #ff6b6b, #feca57); }
+          .bg-gradient-2 { background: linear-gradient(45deg, #4834d4, #686de0); }
+          .bg-gradient-3 { background: linear-gradient(45deg, #6c5ce7, #a8e6cf); }
+  
+          h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+          }
+  
+          p {
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 2rem 1rem;
+  
+      .about-header h1 {
+        font-size: 2rem;
+      }
+  
+      .team-section h2 {
+        font-size: 2rem;
+      }
+    }
+  }
