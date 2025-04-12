@@ -49,6 +49,17 @@ npm install @vitejs/plugin-react --save-dev
 npm install eslint eslint-plugin-react --save-dev
 ```
 
+#### Sass 💅
+- **Fungsi**: Preprocessor CSS yang powerful
+- **Alasan Pemilihan**:
+  - Nested syntax yang lebih rapi
+  - Variabel dan mixins untuk reusabilitas
+  - Modularisasi CSS yang lebih baik
+- **Instalasi**:
+```bash
+npm install sass --save-dev
+```
+
 ### Fitur Tambahan (Opsional)
 
 #### TypeScript 📝
